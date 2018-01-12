@@ -17,3 +17,7 @@ ifneq ($(filter angler,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nexus/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/nexus/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
+endif
